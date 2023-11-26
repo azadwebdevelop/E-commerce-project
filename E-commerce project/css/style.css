@@ -1,0 +1,126 @@
+:root{
+    --bg-primary:#0aad0a;
+    --text-primary:#0aad0a;
+    --transition:.5s;
+    --shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100%;
+}
+
+.text-primary-color{
+    color: var(--text-primary);
+}
+.cutom-bg-color{
+    background: var(--bg-primary) !important;
+    color: #fff;
+}
+.btn-success{
+    background: var(--bg-primary) !important;
+    color: #fff;
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 10px; /* remove the gap so it doesn't close */
+}
+.slider-content {
+    padding: 150px 0 150px 40px;
+}
+.slider-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* feature category */
+.f-category{
+    transition: .3s;
+}
+.f-category:hover{
+    border:1px solid var(--bg-primary);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.f-category img {
+    max-width: 65%;
+    margin: 10px auto;
+}
+
+.owl-nav {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    display: flex;
+    gap:10px
+}
+.owl-prev,.owl-next {
+    background: #acacac !important;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    border-radius: 50%;
+    transition: .3s;
+}
+.owl-prev:hover{
+    background: var(--bg-primary) !important;
+}
+.owl-next:hover{
+    background: var(--bg-primary) !important;
+}
+
+/* product card css */
+.sale-btn{
+    top: 10px;
+    left: 15px;
+}
+.disocunt-btn{
+    top: 10px;
+    right: 15px;
+}
+.card-product-action {
+    position: absolute;
+    bottom: 14px;
+    display: none;
+    transition: var(--transition);
+}
+
+.card-product-action a {
+    display: inline-block;
+    background: #d4d0d0;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #999898;
+    transition: var(--transition);
+}
+.card-product-action a:hover{
+    background: var(--bg-primary);
+    color: #fff;
+}
+.product-card{
+    transition: var(--transition);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.product-card:hover{
+    border:1px solid var(--bg-primary);
+    box-shadow: var(--shadow);
+}
+.product-card:hover .card-product-action {
+    display: block;
+}
+.product-image img{
+    transition: var(--transition);
+}
+.product-card:hover .product-image>img {
+   transform: scale(1.2);
+   /* transform: rotate(350deg); */
+   /* transform: skew(145deg); */
+}

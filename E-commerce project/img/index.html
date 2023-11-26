@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- topbar -->
+  <div class="topbar bg-dark-subtle py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="topbar-left-content">
+            <h5> Super Value Deals - Save more with coupons</h5>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="language-dropdown-menu ms-auto w-25">
+            <select class="form-select" aria-label="Default select example">
+              <option selected><i class="bi bi-translate"></i> English</option>
+              <option>Bangla</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+  <header class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="logo">
+            <img src="img/freshcart-logo.svg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="search-form">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="cart-btns d-flex justify-content-end">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="">
+                  <i class="bi bi-heart"></i>
+                  <span class="position-absolute top-0 translate-middle badge rounded-pill bg-success">
+                    5
+                  </span>
+                </a>
+              </li>
+
+              <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#signup"><i
+                    class="bi bi-person"></i></a></li>
+              <li class="nav-item">
+                <a class="nav-link position-relative" href="" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasCartList">
+                  <i class="bi bi-bag-check"></i>
+                  <span class="position-absolute top-0 translate-middle badge rounded-pill bg-success">
+                    2
+                  </span>
+                </a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- user register model start -->
+  <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-success">Sign up</button>
+          </form>
+        </div>
+        <div class="modal-footer  justify-content-center text-center">
+          <p>Already have an account? <a href="" class="text-primary-color"> Sign in</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- user register model end -->
+
+ <!--offcanvas start-->
+ 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCartList" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">shop-cart</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <img src="img/products/product-img-8.jpg" alt="">
+        
+      </li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">And a fifth one</li>
+    </ul>
+    <div class="cart-action-btns py-4 d-flex justify-content-between">
+      <a class="btn btn-success" href="">Continue Shooping</a>
+      <a class="btn btn-dark" href="">Update-cart</a>
+    </div>
+  </div>
+</div>
+
+<!--main nav start-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown btn btn-success btn-sm">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            All Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Stores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        
+        </div>
+  </div>
+</nav>
+<!--slider start-->
+<div class="container mt-3">
+
+  <div id="mySlider" class="carousel slide">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mySlider" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mySlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active rounded"
+        style="background: url(img/slide-1.jpg) no-repeat center center / cover;">
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="slider-content">
+              <span class="bg-warning badge">Opening Sale Discount 50%</span>
+              <h1>Free Shipping on <br> orders over <span class="text-primary-color">$100</span></h1>
+              <p class="lead fw-semibold">Free Shipping to First-Time Customers Only, After promotions and discounts
+                are applied.
+              </p>
+              <a href="" class="btn btn-dark">Shop Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item  rounded" style="background: url(img/slider-2.jpg) no-repeat center center / cover;">
+        <div class="row">
+          <div class="col-xl-8">
+            <div class="slider-content">
+              <span class="bg-warning badge">Opening Sale Discount 50%</span>
+              <h1>Free Shipping on <br> orders over <span class="text-primary-color">$100</span></h1>
+              <p class="lead fw-semibold">Free Shipping to First-Time Customers Only, After promotions and discounts
+                are applied.
+              </p>
+              <a href="" class="btn btn-dark">Shop Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+  <!-- feature category start -->
+  <section id="featureCategory" class="py-5">
+    <div class="conteiner">
+      <h1 class="fs-3">Feature Category</h1>
+
+
+      <div class="owl-carousel">
+        <div class="card-f-category">
+          <div class="card-body text-center">
+            <img src="img/category-baby-care.jpg" alt="">
+            <h5 class="text-muted">Baby Cate</h5>
+          </div>
+        </div>
+        <div class="card-f-category">
+          <div class="card-body text-center">
+            <img src="img/category-atta-rice-dal.jpg" alt="">
+            <h5 class="text-muted">Baby Cate</h5>
+          </div>
+        </div>
+        <div class="card-f-category">
+          <div class="card-body text-center">
+            <img src="img/category-cleaning-essentials.jpg" alt="">
+            <h5 class="text-muted">Baby Cate</h5>
+          </div>
+        </div>
+        <div class="card-f-category">
+          <div class="card-body text-center">
+            <img src="img/category-bakery-biscuits.jpg" alt="">
+            <h5 class="text-muted">Baby Cate</h5>
+          </div>
+        </div>
+        <div class="card-f-category">
+          <div class="card-body text-center">
+            <img src="img/category-dairy-bread-eggs.jpg" alt="">
+            <h5 class="text-muted">Baby Cate</h5>
+          </div>
+        </div>
+        <div class="card-f-category">
+          <div class="card-body text-center">
+            <img src="img/category-instant-food.jpg" alt="">
+            <h5 class="text-muted">Baby Cate</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      
+       
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/query-3.7.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    items:4,
+    margin:10,
+    nav:true,
+    navText:['<i class="bi bi-chevron-left"></i>','<i class="bi bi-chevron-right"></i>'],
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        576:{
+            items:2
+        },
+        768:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
+
+</body>
+
+</html>
